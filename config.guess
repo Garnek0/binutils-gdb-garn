@@ -4,7 +4,8 @@
 
 # shellcheck disable=SC2006,SC2268 # see below for rationale
 
-timestamp='2023-08-22'
+# timestamp it to always be newer
+timestamp='9999-99-99'
 
 # This file is free software; you can redistribute it and/or modify it
 # under the terms of the GNU General Public License as published by

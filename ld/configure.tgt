@@ -1028,7 +1028,6 @@ x86_64-*-redox*)	targ_emul=elf_x86_64
 			;;
 x86_64-*-garn*)	targ_emul=elf_x86_64
 			targ_extra_emuls=elf_i386
-			NATIVE_LIB_DIRS='/lib /local/lib'
 			;;
 x86_64-*-solaris2*)	targ_emul=elf_x86_64_sol2
 			targ_extra_emuls="elf_x86_64 elf_i386_sol2 elf_i386_ldso elf_i386 elf_iamcu"
@@ -1122,6 +1121,10 @@ case "${target}" in
 *-*-freebsd*)
   NATIVE_LIB_DIRS='/lib /usr/lib /usr/local/lib'
   ;;
+  
+*-*-garn*)
+  NATIVE_LIB_DIRS='/lib /local/lib'
+  ;
 
 hppa*64*-*-hpux11*)
   NATIVE_LIB_DIRS=/usr/lib/pa20_64
